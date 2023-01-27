@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,26 +13,58 @@ body {
   background-size: 100%;
   font-family: 'Space Mono', monospace;
 }
+
+.box-container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .reloj {
-  width: 600px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
   border: 2px solid rgba(10, 175, 230, 1);
   box-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
   padding: 10px;
+  margin: 2rem;
 }
+
 .fecha {
   letter-spacing: 0.1em;
   font-size: 24px;
 }
+
 .hora {
   letter-spacing: 0.05em;
   font-size: 80px;
   padding: 3px 0;
+}
+
+/* Media query*/
+@media (min-width: 451px) and (max-width: 650px) {
+  .fecha {
+    font-size: 18px;
+  }
+
+  .hora {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  .fecha {
+    font-size: 15px;
+  }
+
+  .hora {
+    font-size: 40px;
+  }
 }
