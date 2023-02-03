@@ -32,9 +32,12 @@ body {
   color: white;
   text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
   border: 2px solid rgba(10, 175, 230, 1);
+  border-radius: 50%;
   box-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
   padding: 10px;
   margin: 2rem;
+  width: 500px;
+  height: 500px;
 }
 
 .fecha {
@@ -50,6 +53,10 @@ body {
 
 /* Media query*/
 @media (min-width: 451px) and (max-width: 650px) {
+  .reloj {
+    width: 400px;
+    height: 400px;
+  }
   .fecha {
     font-size: 18px;
   }
@@ -60,6 +67,10 @@ body {
 }
 
 @media (min-width: 250px) and (max-width: 450px) {
+  .reloj {
+    width: 250px;
+    height: 250px;
+  }
   .fecha {
     font-size: 15px;
   }
